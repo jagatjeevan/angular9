@@ -1,0 +1,12 @@
+.inline-template {
+  display: inline-block;
+  padding: 5px 10px;
+
+  &.active {
+    border: 1px solid #c00;
+  }
+
+  &.non-active {
+    border: 1px solid #ccc;
+  }
+}

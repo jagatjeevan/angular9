@@ -1,0 +1,20 @@
+<div class="app-container">
+  <header class="app-header">
+    Here goes the header
+  </header>
+  <nav class="app-aside">
+    <a
+      [routerLink]="['']"
+      routerLinkActive="active"
+      [routerLinkActiveOptions]="{ exact: true }"
+      >Home</a
+    >
+    <a [routerLink]="['products']" routerLinkActive="active">Products Page</a>
+  </nav>
+  <article class="app-content">
+    <router-outlet></router-outlet>
+  </article>
+  <footer class="app-footer">
+    Understanding Angular 9
+  </footer>
+</div>

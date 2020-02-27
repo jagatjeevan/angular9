@@ -1,0 +1,26 @@
+$spacer: 10px;
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+button {
+  padding: 10px 25px;
+  border: 1px solid #e8e8e8;
+  color: #333;
+  font: inherit;
+}
+
+.right-spacer {
+  margin-right: 10px;
+}
+
+.top-spacer {
+  margin-top: 10px;
+}
