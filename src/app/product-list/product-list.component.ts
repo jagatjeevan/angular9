@@ -1,5 +1,6 @@
 import { Component, OnInit } from "@angular/core";
 import { HttpService } from "../http.service";
+import { Photos } from "../interface/photos";
 
 @Component({
   selector: "app-product-list",
@@ -10,22 +11,18 @@ export class ProductListComponent implements OnInit {
   clickCounter: number = 0;
   countTimes: string = "time";
   name: string = "Jagat Jeevan";
+  photos: Array<Photos> = [];
 
-  constructor(_http: HttpService) {
-    _http.getProducts();
-  }
+  constructor(private _http: HttpService) {}
 
   getCountTime() {
     this.countTimes = this.clickCounter > 1 ? "times" : "time";
   }
 
-  incrementClick() {
-    this.clickCounter += 1;
-    this.getCountTime();
-  }
-
-  decrementClick() {
-    this.clickCounter -= 1;
+  changeClickCount(isIncrement: boolean) {
+    this.clickCounter = isIncrement
+      ? this.clickCounter + 1
+      : this.clickCounter - 1;
     this.getCountTime();
   }
 
@@ -37,5 +34,11 @@ export class ProductListComponent implements OnInit {
     return myClass;
   }
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this._http.getPhotos().subscribe((data: Array<Photos>) => {
+      console.log(data);
+      this.photos = data.slice(0, 20);
+      console.log(this.photos);
+    });
+  }
 }

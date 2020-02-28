@@ -10,3 +10,15 @@
     border: 1px solid #ccc;
   }
 }
+
+.product-list-container {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+
+  > div {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+}

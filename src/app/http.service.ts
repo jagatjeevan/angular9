@@ -5,9 +5,9 @@ import { HttpClient } from "@angular/common/http";
   providedIn: "root"
 })
 export class HttpService {
-  constructor(http: HttpClient) {}
+  constructor(private http: HttpClient) {}
 
-  getProducts() {
-    console.log("get the product details");
+  getPhotos() {
+    return this.http.get("https://jsonplaceholder.typicode.com/photos");
   }
 }

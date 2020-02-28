@@ -1,7 +1,7 @@
-<button class="button right-spacer" (click)="incrementClick()">
+<button class="button right-spacer" (click)="changeClickCount(true)">
   Click me to increase count
 </button>
-<button class="button right-spacer" (click)="decrementClick()">
+<button class="button right-spacer" (click)="changeClickCount(false)">
   Click me to decrease count
 </button>
 You have clicked {{ clickCounter }} {{ countTimes }}. <br />
@@ -18,4 +18,10 @@ You have clicked {{ clickCounter }} {{ countTimes }}. <br />
 <div class="top-spacer">
   <input type="text" [(ngModel)]="name" />
   Hello {{ name }}
+</div>
+
+<div class="top-spacer product-list-container">
+  <div *ngFor="let photo of photos">
+    <img src="{{ photo.thumbnailUrl }}" id="{{ photo.id }}" />
+  </div>
 </div>
