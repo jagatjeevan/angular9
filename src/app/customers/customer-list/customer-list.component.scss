@@ -1,0 +1,28 @@
+table {
+  width: 95%;
+  margin: 0 0 20px;
+  border: 1px solid #cacaca;
+
+  thead {
+    background: #cfcfcf;
+  }
+
+  tbody {
+    tr {
+      &:nth-child(2n) {
+        td {
+          background-color: #eaeaea;
+        }
+      }
+      &:hover {
+        td {
+          background-color: darken(#eaeaea, 5%);
+        }
+      }
+    }
+  }
+
+  td {
+    padding: 2px 5px;
+  }
+}

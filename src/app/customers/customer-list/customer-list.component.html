@@ -1,0 +1,22 @@
+<table>
+  <thead>
+    <tr>
+      <td>Id</td>
+      <td>Discount</td>
+      <td>Title</td>
+      <td>Body</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngIf="!customerList.length">
+      <td colspan="4" align="center">No records found</td>
+    </tr>
+    <tr *ngFor="let customer of customerList">
+      <td>{{ customer.id }}</td>
+      <td>{{ customer.userId | currency: currencyCode:"symbol" }}</td>
+      <td>{{ customer.title | capitalize }}</td>
+      <td>{{ customer.body | capitalize }}</td>
+    </tr>
+  </tbody>
+</table>
+<p>Number of customers: {{ customerList.length }}</p>

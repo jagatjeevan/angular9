@@ -1,0 +1,6 @@
+<h1>{{ headerTitle }}</h1>
+<app-customer-filter
+  [filter]="filterText"
+  (changed)="filterChanged($event)"
+></app-customer-filter>
+<app-customer-list [customers]="people"></app-customer-list>

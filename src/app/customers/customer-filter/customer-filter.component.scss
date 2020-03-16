@@ -1,0 +1,13 @@
+.filter-container {
+  align-items: center;
+  display: flex;
+  margin-bottom: 10px;
+  width: 95%;
+
+  input[type="text"] {
+    flex: 1;
+    font-size: inherit;
+    margin-left: 10px;
+    padding: 5px 10px;
+  }
+}
