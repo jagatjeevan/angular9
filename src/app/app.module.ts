@@ -9,9 +9,10 @@ import { environment } from "../environments/environment";
 import { CustomersModule } from "./customers/customers.module";
 import { SharedModule } from "./shared/shared.module";
 import { CoreModule } from "./core/core.module";
+import { FileNotfound } from "./file-not-found.component";
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, FileNotfound],
   imports: [
     BrowserModule,
     AppRoutingModule,
