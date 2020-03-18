@@ -4,7 +4,7 @@ import { FileNotfound } from "./file-not-found.component";
 
 const routes: Routes = [
   { path: "", pathMatch: "full", redirectTo: "/customers" },
-  { path: "x  random", pathMatch: "full", component: FileNotfound },
+  { path: "random", pathMatch: "full", component: FileNotfound },
 ];
 
 @NgModule({
