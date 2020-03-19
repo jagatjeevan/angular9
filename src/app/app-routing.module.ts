@@ -3,7 +3,12 @@ import { Routes, RouterModule } from "@angular/router";
 import { FileNotfound } from "./file-not-found.component";
 
 const routes: Routes = [
-  { path: "", pathMatch: "full", redirectTo: "/customers" },
+  {
+    path: "",
+    pathMatch: "full",
+    loadChildren: () =>
+      import("./customers/customers.module").then(m => m.CustomersModule),
+  },
   { path: "random", pathMatch: "full", component: FileNotfound },
 ];
 
