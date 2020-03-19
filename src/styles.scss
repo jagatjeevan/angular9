@@ -10,3 +10,27 @@ body {
   justify-content: center;
   align-items: center;
 }
+
+.dashboard-list {
+  display: flex;
+}
+
+.image-container {
+  width: 120px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  box-shadow: #ddd 1px 1px 3px;
+  margin-right: 20px;
+  text-align: center;
+
+  img {
+    width: 80%;
+    margin: 10px;
+  }
+
+  label {
+    padding: 5px 10px;
+    background: #ddd;
+    display: block;
+  }
+}

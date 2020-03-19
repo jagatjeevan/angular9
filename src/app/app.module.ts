@@ -8,10 +8,10 @@ import { environment } from "../environments/environment";
 
 import { SharedModule } from "./shared/shared.module";
 import { CoreModule } from "./core/core.module";
-import { FileNotfound } from "./file-not-found.component";
+import { Dashboard } from "./dashboard.component";
 
 @NgModule({
-  declarations: [AppComponent, FileNotfound],
+  declarations: [AppComponent, Dashboard],
   imports: [
     BrowserModule,
     AppRoutingModule,

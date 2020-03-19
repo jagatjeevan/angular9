@@ -1,6 +1,6 @@
 import { NgModule } from "@angular/core";
 import { Routes, RouterModule } from "@angular/router";
-import { FileNotfound } from "./file-not-found.component";
+import { Dashboard } from "./dashboard.component";
 
 const routes: Routes = [
   {
@@ -13,7 +13,7 @@ const routes: Routes = [
     loadChildren: () =>
       import("./orders/orders.module").then(m => m.OrdersModule),
   },
-  { path: "", pathMatch: "full", component: FileNotfound },
+  { path: "", pathMatch: "full", component: Dashboard },
 ];
 
 @NgModule({
