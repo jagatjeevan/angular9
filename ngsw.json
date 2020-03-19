@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1584591461952,
+  "timestamp": 1584591979558,
   "index": "/index.html",
   "assetGroups": [
     {
@@ -63,7 +63,7 @@
     "/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
     "/assets/shoppingcart.svg": "0ce1ecec5beef0b2d8466134b7fdb0571a9f023a",
     "/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
-    "/index.html": "d377d940e3edf9fcd08a280c4d38e22227b26e23",
+    "/index.html": "1e9554cdbf066b349c9e4845f5f292364c66f20c",
     "/main-es2015.46d55c79af5f9051cc2a.js": "82feca446649a28cf5231ca677900e374fc04b7b",
     "/main-es5.46d55c79af5f9051cc2a.js": "a35abe246bee0bd69e5970fddf94ea35ca150729",
     "/manifest.webmanifest": "b20fed61055c9413d2cd01906fbcf0215417bdf9",
