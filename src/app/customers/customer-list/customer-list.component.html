@@ -12,7 +12,9 @@
       <td colspan="4" align="center">No records found</td>
     </tr>
     <tr *ngFor="let customer of customerList">
-      <td>{{ customer.id }}</td>
+      <td>
+        <a [routerLink]="['/customers/', customer.id]">{{ customer.id }}</a>
+      </td>
       <td>{{ customer.userId | currency: currencyCode:"symbol" }}</td>
       <td>{{ customer.title | capitalize }}</td>
       <td>{{ customer.body | capitalize }}</td>

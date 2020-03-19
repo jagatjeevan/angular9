@@ -6,7 +6,6 @@ import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
 import { environment } from "../environments/environment";
 
-import { CustomersModule } from "./customers/customers.module";
 import { SharedModule } from "./shared/shared.module";
 import { CoreModule } from "./core/core.module";
 import { FileNotfound } from "./file-not-found.component";
@@ -19,7 +18,6 @@ import { FileNotfound } from "./file-not-found.component";
     ServiceWorkerModule.register("ngsw-worker.js", {
       enabled: environment.production,
     }),
-    CustomersModule,
     SharedModule,
     CoreModule,
   ],

@@ -4,12 +4,16 @@ import { FileNotfound } from "./file-not-found.component";
 
 const routes: Routes = [
   {
-    path: "",
-    pathMatch: "full",
+    path: "customers",
     loadChildren: () =>
       import("./customers/customers.module").then(m => m.CustomersModule),
   },
-  { path: "random", pathMatch: "full", component: FileNotfound },
+  {
+    path: "orders",
+    loadChildren: () =>
+      import("./orders/orders.module").then(m => m.OrdersModule),
+  },
+  { path: "", pathMatch: "full", component: FileNotfound },
 ];
 
 @NgModule({
